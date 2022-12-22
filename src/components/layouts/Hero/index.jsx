@@ -15,7 +15,7 @@ const Hero = () => {
         <HeroDescription/>
       </div>
       <HeroLinks />
-      <Image className="hero__line" src={Line} />
+      <Image className="hero__line" src={Line} alt="line"/>
     </div>
   )
 }

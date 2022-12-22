@@ -12,7 +12,7 @@ const HeroImage = () => {
       animate={animate}
       transition={transition}
     >
-      <Image  src={photo} />
+      <Image  src={photo} alt="Yerodin Cuellar"/>
     </motion.div>
   )
 }
