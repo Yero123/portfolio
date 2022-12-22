@@ -1,0 +1,92 @@
+.contactMe {
+  // background-color: $primaryColor;
+  position: relative;
+
+  .contacMe__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contactChannel__container {
+      margin: 0 2rem;
+    }
+
+    z-index: 3;
+  }
+
+  .contactMe__decoration {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    text-align: center;
+    z-index: -1;
+
+  }
+
+  .contactChannel {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    width: 200px;
+    justify-content: start;
+    margin: 0 2rem;
+    margin-bottom: 1rem;
+    z-index: 5;
+
+    .contactChannel__icon {
+      font-size: 2rem;
+      color: $secondaryColor;
+      margin-right: 1rem;
+    }
+
+    .contactChannel__body {
+      p {
+        margin: 0 0;
+        padding: 0;
+      }
+
+      .contactChannel__body_title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $secondaryColor;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .contactMe__decoration {
+    .contactMe__decoration_image {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  @include for-size(desktop) {
+    .contacMe__body {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .contactMe__decoration {
+      .contactMe__decoration_image {
+        // background-color: red;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: -250px;
+        width: 600px;
+        height: 600px;
+      }
+    }
+  }
+}

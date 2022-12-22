@@ -1,0 +1,43 @@
+$bgColor: #222831;
+$primaryColor: #00adb5;
+$secondaryColor: #eeeeee;
+$tertiaryColor: #393e46;
+$quaternaryColor: #222831;
+$quinaryColor: #959DA9;
+
+// Mobile First Breakpoints //
+$bp-1680: 1680px; // xlarge-screens
+$bp-1280: 1280px; // large-screens
+$bp-1024: 1024px; // medium-screens
+$bp-800: 800px; // lsmall-screens
+$bp-640: 640px; // small-screens
+$bp-320: 320px; // xsmall-screens
+
+// Tablet //
+$bp-ipad-landscape: 1024px;
+$bp-ipad-portrait: 768px;
+
+// iPhone 6+ //
+$bp-iphone6plus-landscape: 736px;
+$bp-iphone6plus-portrait: 414px;
+
+// iPhone 6 //
+$bp-iphone6-landscape: 667px;
+$bp-iphone6-portrait: 375px;
+
+// iPhone 5 => 4 //
+$bp-iphone5-landscape: 568px;
+$bp-iphone5-portrait: 320px;
+
+
+@mixin for-size($size) {
+  @if  $size == tablet {
+    @media (min-width: 768px) { @content; }
+  } @else if $size == desktop {
+    @media (min-width: 992px) { @content; }
+  } @else if $size == big-desktop {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}

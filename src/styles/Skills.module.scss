@@ -1,0 +1,41 @@
+
+.skills{
+  .subtitle{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+}
+.skillsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 8rem;
+  padding-top: 4rem !important;
+  .skills__item{
+    .skill{
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  @include for-size(desktop) {
+    padding: 0 20%;
+    gap:1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    .skills__item{
+      flex: 1 1 18%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      .skill{
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+  }
+}

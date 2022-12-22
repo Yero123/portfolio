@@ -1,0 +1,129 @@
+.recentWork {
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // margin: 0 2rem;
+    // &:first-child {
+    padding-top: 4rem;
+    // }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-weight: 700;
+        color: $secondaryColor;
+        font-size: 2.4rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .project__goal {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $quinaryColor;
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+
+      .project__description {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $secondaryColor;
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+
+      .project__link_responsive {
+        display: none;
+      }
+
+      .project__mockUp_image {
+        width: 350px;
+        height: 350px;
+      }
+    }
+
+    margin-top:6rem;
+    margin-bottom: 4rem;
+
+    @include for-size(desktop) {
+      
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 6.5rem;
+      gap: 2rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .project__link_responsive {
+          display: block;
+        }
+
+        div {
+          flex-direction: row-reverse;
+
+          div {
+            margin-left: 2rem;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+        }
+      }
+
+      .project__mockUp {
+        display: flex;
+        // width:600px !important;
+        justify-content: center;
+        align-items: center;
+        // width: 40vw;
+      }
+
+      .project__mockUp_image {
+        width: 450px !important;
+        height: 450px !important;
+      }
+
+      .project__link {
+        display: none;
+      }
+
+      padding-top: 2rem !important;
+    }
+
+  }
+
+  @include for-size(desktop) {
+    .subtitle{
+      p{
+        top: -105px;
+      }
+      h2{
+        top: -30px;
+      }
+    }
+    .recentWork__space {
+      width: 0.1rem;
+      height: 0.1rem;
+      // background-color: red;
+    }
+
+    .recentWork__space2 {
+      width: 7rem;
+      height: 7rem;
+
+    }
+
+  }
+}

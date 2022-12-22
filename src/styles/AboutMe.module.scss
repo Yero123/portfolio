@@ -1,0 +1,56 @@
+.aboutMe {
+  background-color: #1D222A;
+  padding: 3rem 0;
+  @include for-size(desktop) {
+    padding: 7rem 3rem;
+    margin-bottom: 3rem;
+  }
+  .areasGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 4rem;
+    div {
+      background-color: $quaternaryColor;
+      border-radius: 22.59px;
+      flex: 1 1 33%;
+      padding: 1rem;
+      text-align: center;
+      width: 20%;
+      .area-icon {
+        color: $primaryColor;
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        
+      }
+    }
+    @include for-size(desktop) {
+      display: flex;
+      padding: 0 10rem;
+      gap:2rem;
+      flex-wrap: nowrap;
+      div {
+        .area-icon {
+          font-size: 3.7rem;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12rem;
+        width: 4rem;
+      
+      }
+
+    }
+  }
+}
