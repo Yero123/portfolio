@@ -53,4 +53,10 @@
 
     }
   }
+  @media screen and (max-height: 668px) {
+    padding-top: 6rem;
+    h3{
+      font-size: 1rem !important;
+    }
+  }
 }

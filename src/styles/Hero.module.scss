@@ -1,5 +1,19 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+
 .hero {
   position: relative;
+  justify-self: center !important;
+  align-self: center !important;
+
   .hero__line {
     position: absolute;
     top: 540px;
@@ -12,11 +26,12 @@
   .hero-nickName {
     position: absolute;
     color: white;
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-weight: bolder;
-    top: -10px;
+    top: -25px;
     left: 10%;
     opacity: 0.1 !important;
+
     p {
       padding: 0;
       margin: 0;
@@ -26,21 +41,42 @@
       font-size: 14rem;
       left: 12%;
     }
+
+    // For Iphone SE
+    @media screen and (max-height: 668px) {
+      top: -20px;
+      font-size: 6rem;
+    }
   }
 
   .hero-photo {
     display: flex;
-    padding-top: 8rem;
+    padding-top: 6.6rem;
     width: 100%;
     justify-content: center;
+
+    img {
+      width: 260px;
+      height: 260px;
+    }
 
     @include for-size(desktop) {
       justify-content: flex-start;
       width: 50%;
       margin-right: 2rem;
+
       img {
         width: 500px;
         height: 500px;
+      }
+    }
+
+    @media screen and (max-height: 668px) {
+      padding-top: 6rem;
+
+      img {
+        width: 240px;
+        height: 240px;
       }
     }
   }
@@ -51,6 +87,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    div {
+      h1 {
+        div {
+          display: inline;
+          color: $primaryColor;
+        }
+      }
+
+      .divider {
+        background-color: $primaryColor;
+        height: 6px;
+        width: 60%;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 1rem 0;
+      }
+    }
 
     @include for-size(desktop) {
       flex-direction: row-reverse;
@@ -81,23 +138,11 @@
       }
     }
 
-    div {
-      h1 {
-        div {
-          display: inline;
-          color: $primaryColor;
+    @media screen and (max-height: 668px) {
+      div {
+        h1 {
+          margin-top: 0;
         }
-      }
-
-      .divider {
-        background-color: $primaryColor;
-        height: 6px;
-        width: 60%;
-      }
-
-      p {
-        font-size: 1.5rem;
-        font-weight: 300;
       }
     }
   }
@@ -169,4 +214,6 @@
     }
 
   }
+
+
 }
