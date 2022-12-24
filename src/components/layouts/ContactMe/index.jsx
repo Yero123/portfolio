@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const ContactMe = () => {
   return <section className='contactMe'>
     <div className='contacMe__body'>
-      <h2>Contact Me</h2>
+      <h2>Contactame</h2>
       <div className='contactChannel__container'>
-        <ContactChannel icon={<FontAwesomeIcon icon={faPhoneAlt} />} title="Call me" info="+51 970 969 007" />
+        <ContactChannel icon={<FontAwesomeIcon icon={faPhoneAlt} />} title="Número" info="+51 970 969 007" />
         <ContactChannel icon={<FontAwesomeIcon icon={faEnvelope} />} title="Email" info="yerodince@gmail.com" />
       </div>
     </div>

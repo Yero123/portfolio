@@ -27,7 +27,7 @@ const Project = ({ title, goal, description, logo, mockUp, link }) => {
               <Button>Descargar</Button>
             </Link>
           </div>
-          <Image src={logo.src} alt={logo.alt} width={200} height={200} />
+          <Image className='project__logo' src={logo.src} alt={logo.alt} width={200} height={200} />
         </div>
       </motion.div>
       <motion.div className='project__mockUp'

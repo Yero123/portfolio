@@ -39,7 +39,7 @@ const RecentWork = () => {
     }
   ];
   return <div className='recentWork'>
-    <Subtitle text="Recent Work" />
+    <Subtitle text="Proyectos" />
     <div className='recentWork__space' />
     {projects.map((project, index) => <Project
       key={index}

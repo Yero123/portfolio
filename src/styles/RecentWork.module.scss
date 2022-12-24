@@ -1,11 +1,11 @@
 .recentWork {
 
   .project {
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     // margin: 0 2rem;
     // &:first-child {
     padding-top: 4rem;
@@ -16,7 +16,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
+      padding: 0 0.8rem;
       h2 {
         font-weight: 700;
         color: $secondaryColor;
@@ -29,24 +29,27 @@
         font-weight: 700;
         color: $quinaryColor;
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
       .project__description {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 500;
         color: $secondaryColor;
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
       .project__link_responsive {
         display: none;
       }
-
+      .project__logo{
+        width: 150px;
+        height: 150px;
+      }
       .project__mockUp_image {
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
       }
     }
 
@@ -57,7 +60,7 @@
       
       display: flex;
       flex-direction: row-reverse;
-      padding: 0 6.5rem;
+      padding: 0 12rem;
       gap: 2rem;
 
       div {
@@ -91,8 +94,8 @@
       }
 
       .project__mockUp_image {
-        width: 450px !important;
-        height: 450px !important;
+        width: 350px !important;
+        height: 350px !important;
       }
 
       .project__link {

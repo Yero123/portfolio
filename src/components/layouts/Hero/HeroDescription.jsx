@@ -10,9 +10,9 @@ const HeroDescription = () => {
       animate={animate}
       transition={transition}
       >
-      <h1>I&apos;m <br /> Yerodin <div>Cuellar</div></h1>
+      <h1>Soy<br /> Yerodin <div>Cuellar</div></h1>
       <div className='divider' />
-      <p>Frontend developer</p>
+      <p>Desarrollador Frontend</p>
       <p>Mobile UX UI Designer</p>
     </motion.div>
   )

@@ -14,9 +14,9 @@ const Header = () => {
       >
         <ul>
           <HeaderLink text="Home" url="#heroSection" selected />
-          <HeaderLink text="About me " url="#aboutMe" selected />
-          <HeaderLink text="Proyects" url="#recentWork" selected />
-          <HeaderLink text="Contact" url="#contactMe" selected />
+          <HeaderLink text="Sobre mi" url="#aboutMe" selected />
+          <HeaderLink text="Proyectos" url="#recentWork" selected />
+          <HeaderLink text="Contacto" url="#contactMe" selected />
         </ul>
       </motion.div>
     </header>
