@@ -11,9 +11,10 @@ const Project = ({ title, goal, description, logo, mockUp, link }) => {
   return (
     <div className='project'>
       <motion.div
-        initial={initialLeft}
-        whileInView={animate}
-        transition={transition}>
+        // initial={initialLeft}
+        // whileInView={animate}
+        // transition={transition}
+        >
         <h2>{title}</h2>
         <div>
           <div>
@@ -31,9 +32,9 @@ const Project = ({ title, goal, description, logo, mockUp, link }) => {
         </div>
       </motion.div>
       <motion.div className='project__mockUp'
-        initial={initial}
-        whileInView={animate}
-        transition={transition}
+        // initial={initial}
+        // whileInView={animate}
+        // transition={transition}
       >
         <Image src={mockUp.src} alt={mockUp.alt} className="project__mockUp_image" />
       </motion.div>

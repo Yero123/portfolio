@@ -1,15 +1,16 @@
 .recentWork {
+  // scroll-snap-align: none;
 
   .project {
-    scroll-snap-align: center;
+    // scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin: 0 2rem;
-    // &:first-child {
     padding-top: 4rem;
-    // }
+    gap: 0.8rem;
+
+    scroll-snap-align: none;
 
     div {
       display: flex;
@@ -17,6 +18,7 @@
       justify-content: center;
       align-items: center;
       padding: 0 0.8rem;
+
       h2 {
         font-weight: 700;
         color: $secondaryColor;
@@ -43,10 +45,12 @@
       .project__link_responsive {
         display: none;
       }
-      .project__logo{
+
+      .project__logo {
         width: 150px;
         height: 150px;
       }
+
       .project__mockUp_image {
         width: 280px;
         height: 280px;
@@ -57,7 +61,7 @@
     margin-bottom: 4rem;
 
     @include for-size(desktop) {
-      
+
       display: flex;
       flex-direction: row-reverse;
       padding: 0 12rem;
@@ -108,14 +112,16 @@
   }
 
   @include for-size(desktop) {
-    .subtitle{
-      p{
+    .subtitle {
+      p {
         top: -105px;
       }
-      h2{
+
+      h2 {
         top: -30px;
       }
     }
+
     .recentWork__space {
       width: 0.1rem;
       height: 0.1rem;

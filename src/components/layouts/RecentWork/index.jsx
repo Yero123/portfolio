@@ -21,7 +21,8 @@ const RecentWork = () => {
         src: QuintiMockUp,
         alt: "MockUpQuinti"
       },
-      link: "https://play.google.com/store/apps/details?id=com.lemaeros.quinti&hl=es_PE&gl=US"
+      link: "https://play.google.com/store/apps/details?id=com.lemaeros.quinti&hl=es_PE&gl=US",
+      id: "none"
     },
     {
       title: "Quinti dealers",
@@ -35,13 +36,16 @@ const RecentWork = () => {
         src: QuintiDealerMockUp,
         alt: "MockUpQuintiDealers"
       },
-      link: "https://play.google.com/store/apps/details?id=com.lemaeros.quinti_deliveries"
+      link: "https://play.google.com/store/apps/details?id=com.lemaeros.quinti_deliveries",
+      id: "recentWork"
     }
   ];
-  return <div className='recentWork'>
+  return <>
     <Subtitle text="Proyectos" />
-    <div className='recentWork__space' />
-    {projects.map((project, index) => <Project
+
+
+    {/* <div className='recentWork__space' /> */}
+    {projects.map((project, index) => <section id='recentWork' className='recentWork'> <Project
       key={index}
       title={project.title}
       goal={project.goal}
@@ -49,10 +53,12 @@ const RecentWork = () => {
       logo={project.logo}
       mockUp={project.mockUp}
       link={project.link}
-    />)}
-    <div className='recentWork__space2' />
+      id={project.id}
+    />
+    </section>)}
+    {/* <div className='recentWork__space2' /> */}
 
-  </div>
+  </>
 }
 
 export default RecentWork

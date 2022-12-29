@@ -15,7 +15,7 @@ const AboutMe = () => {
   }
   return (
     <div className='aboutMe'>
-      <Subtitle text="What I do" />
+      <Subtitle text="Habilidades" />
       <motion.div className="areasGrid"
         initial="hidden"
         whileInView="visible"

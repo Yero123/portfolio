@@ -8,7 +8,8 @@
 .skillsGroup {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 2rem;
+  margin: 0 1.5rem;
+  padding: 0;
   gap: 0.5rem;
   justify-content: center;
   margin-bottom: 8rem;
@@ -21,6 +22,7 @@
   }
   @include for-size(desktop) {
     padding: 0 20%;
+    margin: 0 2rem;
     gap:1rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
