@@ -5,7 +5,7 @@ import Decoration from '@/../public/images/decoration2.png'
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const ContactMe = () => {
-  return <section className='contactMe'>
+  return <div className='contactMe'>
     <div className='contacMe__body'>
       <h2>Contactame</h2>
       <div className='contactChannel__container'>
@@ -16,7 +16,7 @@ const ContactMe = () => {
     <div className='contactMe__decoration'>
       <Image src={Decoration} alt="decoration" className='contactMe__decoration_image' />
     </div>
-  </section>
+  </div>
 }
 
 export default ContactMe

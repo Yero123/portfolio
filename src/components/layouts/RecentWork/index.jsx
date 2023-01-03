@@ -45,7 +45,7 @@ const RecentWork = () => {
 
 
     {/* <div className='recentWork__space' /> */}
-    {projects.map((project, index) => <section id='recentWork' className='recentWork'> <Project
+    {projects.map((project, index) => <section id='recentWork' className='recentWork' key={index}> <Project
       key={index}
       title={project.title}
       goal={project.goal}

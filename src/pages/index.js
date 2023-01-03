@@ -6,6 +6,7 @@ import AboutMe from 'components/layouts/AboutMe'
 import Skills from 'components/layouts/Skills'
 import RecentWork from 'components/layouts/RecentWork'
 import ContactMe from 'components/layouts/ContactMe'
+import Head from 'next/head'
 export default function Home() {
   //TODO: iphone SE
   //TODO: ipad
@@ -13,6 +14,9 @@ export default function Home() {
   //todo: nest hub 
   return (
     <main className={styles.container}>
+      <Head>
+        <title>Yerodin Cuellar</title>
+      </Head>
       <div className="maincontainer">
         <section className='heroSection'>
           <Header />
