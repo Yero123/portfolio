@@ -12,8 +12,8 @@ const HeroDescription = () => {
       >
       <h1>Soy<br /> Yerodin <div>Cuellar</div></h1>
       <div className='divider' />
-      <p>Desarrollador Frontend</p>
-      <p>Mobile UX UI Designer</p>
+      <p>Desarrollador Full stack</p>
+      <p>Javascript: Next and Nest</p>
     </motion.div>
   )
 }

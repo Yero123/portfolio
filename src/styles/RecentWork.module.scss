@@ -1,6 +1,5 @@
 .recentWork {
   // scroll-snap-align: none;
-
   .project {
     // scroll-snap-align: center;
     display: flex;
@@ -121,7 +120,9 @@
         top: -30px;
       }
     }
-
+    .project__info{
+      max-width: 700px;
+    }
     .recentWork__space {
       width: 0.1rem;
       height: 0.1rem;

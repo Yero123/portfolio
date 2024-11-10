@@ -43,7 +43,9 @@ const RecentWork = () => {
   return <>
     <Subtitle text="Proyectos" />
 
+    <div style={{marginTop:"2rem", width:"1px",height:"1px"}}>
 
+    </div>
     {/* <div className='recentWork__space' /> */}
     {projects.map((project, index) => <section id='recentWork' className='recentWork' key={index}> <Project
       key={index}

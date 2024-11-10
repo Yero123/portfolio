@@ -24,7 +24,7 @@ const Skills = () => {
     }
   };
   return <div className='skills'>
-    <Subtitle text="Tegnologias" />
+    <Subtitle text="Tecnologias" />
     <motion.ul className="skillsGroup"
       variants={container}
       initial="hidden"

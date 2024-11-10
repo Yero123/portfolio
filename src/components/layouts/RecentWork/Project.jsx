@@ -14,6 +14,7 @@ const Project = ({ title, goal, description, logo, mockUp, link }) => {
         // initial={initialLeft}
         // whileInView={animate}
         // transition={transition}
+        className='project__info'
         >
         <h2>{title}</h2>
         <div>

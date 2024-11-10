@@ -70,6 +70,7 @@
 
   @include for-size(desktop) {
     .contacMe__body {
+      margin-top: 2rem;
       h2 {
         font-size: 3rem;
       }
