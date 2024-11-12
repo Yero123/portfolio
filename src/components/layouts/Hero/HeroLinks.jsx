@@ -20,7 +20,7 @@ const HeroLinks = () => {
       <ul>
         <li>
           <Link
-            href="https://www.linkedin.com/in/yerodin-cuellar-66b4b4218/"
+            href="www.linkedin.com/in/naveed-cuellar-66b4b4218"
             target="_blank"
           >
             <FontAwesomeIcon icon={faLinkedinIn} className="links-icon" />
